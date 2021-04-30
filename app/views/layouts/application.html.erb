@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="aa">
   <head>
     <title>App</title>
     <%= csrf_meta_tags %>
@@ -10,6 +10,12 @@
   </head>
 
   <body>
+<%= render 'layouts/nav' %>
+<%= bootstrap_flash %>
+<div class="container">
+  <i class="fas fa-flag"></i>
     <%= yield %>
+</div>
+  <%= render 'layouts/footer' %>
   </body>
 </html>

@@ -38,6 +38,10 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'jquery-rails', '~> 4.4'
 gem 'sprockets-rails', '~> 3.2', '>= 3.2.2'
+gem 'font-awesome-sass', '~> 5.15', '>= 5.15.1'
+gem 'devise', '~> 4.8'
+gem 'bootstrap-sass-extras'
+gem 'simple_form', '~> 5.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -63,3 +67,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+group :production do
+  gem 'factor', '~> 0.6.12'
+  gem 'pg', '~> 1.2', '>= 1.2.3'
+end
